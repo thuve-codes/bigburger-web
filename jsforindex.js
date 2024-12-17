@@ -48,3 +48,22 @@ function showSlides() {
 }
 
 // Initial call to start the slideshow
+
+
+
+
+function addtocard(item) {
+    var itemCount = prompt("Enter " + item + " count:", 1);
+    
+    if(itemCount==null){
+        return false;
+    }
+    itemCount = parseInt(itemCount);
+   
+    if (isNaN(itemCount) || itemCount <= 0) {
+        alert("Please enter a valid count.");
+        return false;
+    }
+    alert("Item Added Sucessfully");
+    console.log(item + " added with count: " + itemCount);
+}
